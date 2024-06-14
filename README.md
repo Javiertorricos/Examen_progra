@@ -139,6 +139,7 @@ void DoSomething(const map<int, int>& m) {                                      
 ~~~
 ## COMPARACION DE BASE DE DATOS EXISTENTES
   - PostgreSQL: 
- Es muy extensible y permite crear tipos de datos personalizados y funciones. Además garantiza la confiabilidad de las transacciones, y está optimizado para manejar consultas complejas y grandes volúmenes de datos. Sin emabargo, al ser tan personalizable requiere más tiempo y esfuerzo para la configuración y mantenimineto. Siendo asi la base de datos mas compleja de manejo inicialmente. Por lo que podriamos solucionar este problema al crear nuestro propia base de datos controlada, personalizada y gestionada por nuestra empresa.
-  -  
+  Es muy flexibe para crear todo tipos de datos personalizados y funciones. Además garantizar la confiabilidad de las acciones, ademas está optimizado para manejar consultas complejas y grandes cantidades de datos variados. La parte mala por ser tan variada es que requiere un mayoe tiempo para configurarlo y mantenerlo en contanste monitoreo. Consecuentemente es la base de datos mas compleja de uso inicialmente. Por lo que se sugiere solucionar este problema al crear nuestro propia base de datos controlada, personalizada y gestionada por nuestros empleados con sobreexplotacion laboral extentida.
+  -  MongoDB:
+  Es una base de datos no relacional, por lo que es muy flexible y no requiere un plan de pasos fijo. Está diseñado para trabajar con un gran variedad de datos. También es muy rápido y se complementa fácilmente con aplicaciones modernas. Por desgracia necesita considerables niveles de memoria considerando la cantidad de datos introducidos.
 
