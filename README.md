@@ -143,3 +143,24 @@ void DoSomething(const map<int, int>& m) {                                      
   -  MongoDB:
   Es una base de datos no relacional, por lo que es muy flexible y no requiere un plan de pasos fijo. Está diseñado para trabajar con un gran variedad de datos. También es muy rápido y se complementa fácilmente con aplicaciones modernas. Por desgracia necesita considerables niveles de memoria considerando la cantidad de datos introducidos.
 
+Con la informacion recabada se hara una base de datos similar o diferente a las dos anteriormente mencionadas para la empresa.
+
+## EXPLICACION DE FUNCIONES
+Se utilizaran las funcione:
+- Add Fecha Evento:
+  
+  Se utlizara para agregar una fecha con una variable conts para que cada fecha que se use se guarde en la memoria y se utilize con las diferentes funciones como por ejemplo del, find y print para su uso principal.
+
+  Esta consta de varias pruebas para comprobar si esta bien puesta una fecha y en caso contrario que no este no la agregara y pedira que la coloque bien, ej: apenas se coloque Add fecha evento se tendra que poner enter para que el sistema comprenda que ya estas para colocar la fecha y el nombre lo cual pedira tres int con un - en vez de cada espacio de los int y despues del 3 int se pedira un espacio para la string que servira para guardar el nombre del evento pero en caso contrario no coloque nada y se deje en blanco o en espacio colocara Evento(n).
+  Para esto se tomaran los anteriores errores ya vistos de --, --- y los otros para eveitar errores en el sistema de mes y dia.
+- Del Fecha Evento:
+
+
+- Del Fecha:
+
+  
+- Find Fecha:
+
+  
+- Print:
+
