@@ -9,16 +9,24 @@ void Print(const map<string, set<string>>& Datos);
 void DoSomething(const map<int, int>& m);
 
 int main(){
+    int contevent = 1;
     map<string, set<string>> Datos;
     cout << "Los comandos son:" << endl;
     cout << "Add: año-mes-dia Evento\nDel: año-mes-dia Evento\nDel: año-mes-dia\nFind: año-mes-dia\nPrint" << endl;
+    
     string comando, year, month, day, evento, fecha;
+    
     while (true) {
     cout << "Ingrese un comando: ";
     cin >> comando;
 
     if (comando == "Add") {
-        cin >> year >> month >> day >> evento;
+        cin >> year >> month >> day;
+        string evento;
+        cin >> evento;
+        if (evento == " ") {
+                evento = "Evento(" + to_string(contevent++) + ")";
+        }
         int mes = stoi(month);
         int dia = stoi(day);
         if (mes < 1 || mes > 12) {
@@ -44,19 +52,19 @@ int main(){
 } 
     else if (comando == "Print") {
             Print(Datos);
+            break;
 } 
     else {
         cout << "Comando desconocido" << endl;
         }
     }
 
-    return 0;
 }
 
 void Print(const map<string, set<string>>& Datos) {
-    for (const auto& pair : Datos) {
-        cout << pair.first << " ";
-        for (const auto& evento : pair.second) {
+    for (const auto& e : Datos) {
+        cout << e.first << " ";
+        for (const auto& evento : e.second) {
             cout << evento << " ";
         }
         cout << endl;
