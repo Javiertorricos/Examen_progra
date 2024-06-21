@@ -24,9 +24,6 @@ int main(){
         cin >> year >> month >> day;
         string evento;
         cin >> evento;
-        if (evento == " ") {
-                evento = "Evento(" + to_string(contevent++) + ")";
-        }
         int mes = stoi(month);
         int dia = stoi(day);
         if (mes < 1 || mes > 12) {
@@ -37,6 +34,11 @@ int main(){
             cout << "Dia invalido. Debe ser entre 1 y 31." << endl;
             continue;
         }
+        cin.ignore(); 
+        getline(cin, evento); 
+        if (evento.empty() || evento == " ") {
+        evento = "Evento " + to_string(contevent);
+    }
         fecha = year + "-" + month + "-" + day;
         Datos[fecha].insert(evento);
         cout << "Evento agregado correctamente" << endl;
